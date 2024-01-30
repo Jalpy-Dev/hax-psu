@@ -324,7 +324,7 @@ export class HaxPsu extends LitElement {
         color: white;
         padding: 16px;
         --count-up-number-font-weight: 500;
-        --count-up-number-font-size: 64px;
+        --count-up-number-font-size: 48px;
         --count-up-color: white;
       }
 
@@ -476,7 +476,7 @@ export class HaxPsu extends LitElement {
         }
         #section-3 .container count-up {
           width: unset;
-          --count-up-number-font-size: 48px;
+          --count-up-number-font-size: 24px;
         }
         .section-style-1 {
           width: 100%;
@@ -523,7 +523,7 @@ export class HaxPsu extends LitElement {
     }, 0);
   }
 
-    // because of how processed <template> tags work in lit (illegal) we have to specialized way of rendering
+  // because of how processed <template> tags work in lit (illegal) we have to specialized way of rendering
   // so that the play-list element is empty for a second and then we template stamp it into placee
   renderExamplesTemplate() {
     let template = document.createElement("template");
@@ -616,7 +616,7 @@ export class HaxPsu extends LitElement {
         image: 'https://odl.science.psu.edu/',
       },
 
-      
+
     ];
     this.stats = {};
     this.year = new Date().getFullYear();
